@@ -1,4 +1,4 @@
-b*{
+*{
   box-sizing: border-box;
 }
 table th, td{
@@ -6,44 +6,42 @@ table th, td{
   padding: 10px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;   
+  font-size: 35px;   
 }
-p:nth-child(3){
-  font-size: 40px;
+p:nth-child(2){
+  font-size: 70px;
+  padding-top: 50px;
 }
 body>table{
   margin: 100px;
  border-radius: 10px;
  overflow: hidden;
 }
-tr:nth-child(odd) 
-td:nth-child(odd) {
-  background: rgb(219, 219, 219);
+th:first-child {background: #7887ab;
+  vertical-align: middle;
 }
-  tr:nth-child(even) 
-  td:nth-child(odd) {
-    background: rgb(255, 255, 255);
+
+th:nth-child(2){background:#4f628e}
+
+th:nth-child(3){background:#2e4172}
+
+th:nth-child(4){background:#162955}
+
+th:nth-child(5){background:#061539}
+
+thead{color: white;}
+
+tr:nth-child(odd) > td:nth-child(odd) {
+  background: #dbdbdb;
 }
-  tr:nth-child(2n-1) 
-  td:nth-child(2n) {
-    background:rgb(231, 231, 231);
+
+tr:nth-child(even) > td:nth-child(odd) {
+  background: #ececec;
 }
-th:first-child{
-  background: rgb(120, 135, 171);
+
+tr:nth-child(odd) > td:nth-child(even) {
+  background:#e7e7e7;
 }
-th:nth-child(2){
-  background: rgb(79, 98, 142);
-}
-th:nth-child(3){
-  background: rgb(46, 65, 114);
-}
-th:nth-child(4){
-  background: rgb(22, 41, 85);
-}
-th:nth-child(5){
-  background: rgb(6, 21, 57);
-}
-th:nth-child(1n-5){
-  color: white;
-  font-size: 25px;
+tr:nth-child(even) > td:nth-child(even){
+  background:#fff;
 }
